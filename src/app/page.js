@@ -3,6 +3,25 @@ import Image from "next/image";
 import Script from 'next/script';
 
 export default function Home() {
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    let form = document.querySelector('#form-section form')
+    let button = document.querySelector("#form-section input[type='submit']");
+    let modal = document.querySelector('.mail-sent-modal-div');
+    button.setAttribute('disabled', 'disabled');
+    emailjs.init({
+      publicKey: "tWcj_NvRJyLDHjf3G",
+    });
+
+    emailjs.sendForm('service_v3cloxv', 'template_0jgfoec', form)
+      .then(() => {
+          modal.classList.add('visible')
+      }, (error) => {
+          console.log('FAILED...', error);
+      });
+  }
+
   return (
     <main className="back-black">
         <div>
@@ -194,7 +213,7 @@ export default function Home() {
         </section>
         <section id="form-section" className="relative background flex flex-column align-center">
             <h3 className="text-center">Խնդրում ենք հաստատել Ձեր ներկայությունը միջոցառմանը</h3>
-            <form>
+            <form onSubmit={sendEmail}>
                 <div className="flex flex-column">
                     <label>
                         <span></span>
@@ -203,18 +222,27 @@ export default function Home() {
                     </label>
                     <label>
                         <span></span>
-                        <input type="radio" name="come" value="reject"/>
+                        <input type="radio" name="come" value=""/>
                         Չենք կարողանա գալ
                     </label>
                 </div>
                 <div className="flex flex-column">
-                    <input type="text" name="guest_name" placeholder="Անուն Ազգանուն"/>
-                    <input type="text" name="guest_count" placeholder="Հյուրերի թիվը"/>
+                    <input type="text" name="guest_name" placeholder="Անուն Ազգանուն" id="guest_name"/>
+                    <input type="text" name="guest_count" placeholder="Հյուրերի թիվը" id="guest_count"/>
                     <input type="submit" value="Ուղարկել "/>
                 </div>
             </form>
         </section>
         <Script src="/assets/scripts/index.js"/>
+        <Script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"/>
+        <div className="mail-sent-modal-div">
+          <div>
+            <div>
+              <span>x</span>
+            </div>
+            <p>Ձեր տվյալները ուղղարկված են</p>
+          </div>
+        </div>
     </main>
   );
 }

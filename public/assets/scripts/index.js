@@ -1,13 +1,14 @@
-audio_paused = document.querySelector("#audio-paused")
-audio_played = document.querySelector("#audio-played")
-my_audio = document.querySelector("#my-audio")
-form_inputs = document.querySelectorAll('input[type="radio"][name="come"]')
+let audio_paused = document.querySelector("#audio-paused");
+let audio_played = document.querySelector("#audio-played");
+let my_audio = document.querySelector("#my-audio");
+let form_inputs = document.querySelectorAll('input[type="radio"][name="come"]');
+let modal_close = document.querySelector('.mail-sent-modal-div span');
 
 form_inputs.forEach(element => {
     element.addEventListener('click', function(e){
         input = e.target;
         guest_count = document.querySelector('input[name="guest_count"]');
-        if (e.target.value == "reject"){
+        if (e.target.value == ""){
             if(guest_count){
                 guest_count.style.display="none"
             }
@@ -18,6 +19,10 @@ form_inputs.forEach(element => {
         }
     })
 });
+
+modal_close.addEventListener('click', function(){
+  document.querySelector('.mail-sent-modal-div').classList.remove('visible')
+})
 
 audio_paused.addEventListener("click", function(){
     audio_paused.style.display="none";
