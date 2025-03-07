@@ -380,8 +380,8 @@ h1{
 }
 
 .blur-div {
-  width: 150vw;
-  left: -25vw;
+  width: 3000px;
+  left: -500px;
   height: 200px;
   filter: blur(20px);
   z-index: 0;
