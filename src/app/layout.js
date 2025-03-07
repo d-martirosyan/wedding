@@ -9,15 +9,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="arm">
       <head>
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Էրիկ և Լանա" />
-        <meta name="twitter:description" content="Հրավեր" />
-        <meta name="twitter:image" content="/assets/images/main.png" />
-        <meta property="og:title" content="Էրիկ և Լանա" />
-        <meta property="og:type" content="website" />
         <meta property="og:url" content="https://erik-lana.vercel.app" />
-        <meta property="og:image:url" content="https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg" />
+        <meta property="og:title" content="Էրիկ և Լանա" />
         <meta property="og:description" content="Հրավեր" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg" />
       </head>
       <body>
         {children}
