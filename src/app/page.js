@@ -10,6 +10,7 @@ export default function Home() {
           alt="arrow"
           width={500}
           height={500}
+          priority
         /> 
         <section id="top-section" className="relative">
             <section className="flex flex-column align-center relative">
