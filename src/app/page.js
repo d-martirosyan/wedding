@@ -143,7 +143,7 @@ export default function Home() {
                 <h4><span>14:00</span><br/>Մարիամ Աստվածածին</h4>
                 <span className="place-span">Արմենակ Արմենակյանի փողոց, 225</span>
                 <Image
-                  src="/assets/images/ekexeci2.PNG"
+                  src="/assets/images/mariam.png"
                   alt="church-photo"
                   width={500}
                   height={500}
