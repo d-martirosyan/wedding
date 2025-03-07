@@ -155,7 +155,7 @@ export default function Home() {
                 <Image
                   src="/assets/images/ekexeci.PNG"
                   alt="ekexeci-photo"
-                  width={80}
+                  width={500}
                   height={500}
                   className="church-photo"
                 />
@@ -182,7 +182,7 @@ export default function Home() {
             <div className="flex justify-center photo-sec">
                 <Image
                   src="/assets/images/main.png"
-                  alt="church-photo"
+                  alt="main-photo"
                   width={500}
                   height={500}
                   className="ekexeci-photo"
