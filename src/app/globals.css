@@ -119,6 +119,7 @@ input:active {
   background-image: url('/assets/images/test2.png');
   background-size: cover;
   background-position: top;
+  background-attachment: fixed;
   z-index: 0;
 }
 
@@ -177,7 +178,7 @@ input:active {
 
 #top-section > section:first-child .arrow-div{
   margin-top: auto;
-  margin-bottom: 100px;
+  margin-bottom: 110px;
 }
 
 .arrow-div img{
