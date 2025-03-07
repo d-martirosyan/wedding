@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
     <html lang="arm">
       <head>
         <meta property="og:url" content="https://erik-lana.vercel.app" />
-        <meta property="og:title" content="Էրիկ և Լանա ❤️" />
+        <meta property="og:title" content="Էրիկ և Լանա" />
         <meta property="og:description" content="Հարսանյաց հրավիրատոմս" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://erik-lana.vercel.app/assets/images/metaphoto.jpg" />
