@@ -5,6 +5,12 @@ import Script from 'next/script';
 export default function Home() {
   return (
     <main className="back-black">
+        <Image
+          src="/assets/images/test2.png"
+          alt="arrow"
+          width={500}
+          height={500}
+        /> 
         <section id="top-section" className="relative">
             <section className="flex flex-column align-center relative">
                 <section className="audio-secion flex flex-column align-center justify-center">

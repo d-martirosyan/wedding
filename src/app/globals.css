@@ -1,6 +1,7 @@
 *{
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -38,6 +39,16 @@ html {
 main{
   font-family: 'Monts', sans-serif!important;
   overflow: hidden;
+}
+
+main > img{
+  z-index: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .uppercase {
@@ -109,7 +120,7 @@ input:active {
   box-shadow: none;
 }
 
-#top-section::before{
+/* #top-section::before{
   content: '';
   position: fixed;
   top: 0;
@@ -120,7 +131,7 @@ input:active {
   background-size: cover;
   background-position: top;
   z-index: 0;
-}
+} */
 
 #top-section > section{
   z-index: 1;
