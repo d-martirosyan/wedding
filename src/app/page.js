@@ -77,8 +77,8 @@ export default function Home() {
                     <p>կարևոր և հիշարժան օրը։</p>
                 </div>
             </section>
+            <div className="blur-div relative background"></div>
         </section>
-        <div className="blur-div relative background"></div>
         <section id="second-section" className="background relative flex flex-column align-center">
             <h3 className="text-center">Սպասում ենք Ձեզ մեր հարսանիքին</h3>
             <div className="date flex flex-column align-center">
