@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
         <meta property="og:title" content="Էրիկ և Լանա ❤️" />
         <meta property="og:description" content="Հարսանյաց հրավիրատոմս" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://erik-lana.vercel.app/assets/images/main.png" />
+        <meta property="og:image" content="https://erik-lana.vercel.app/assets/images/metaphoto.jpg" />
       </head>
       <body>
         {children}
